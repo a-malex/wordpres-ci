@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+        stage("clone") {
+            steps {
+                git(url:"https://github.com/a-malex/wordpres-ci.git", credentialsId:"ahmad-github")
+            }
+        }
         stage("build") {
             steps {
                 script {
