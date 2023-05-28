@@ -9,7 +9,7 @@ pipeline {
         stage("build") {
             steps {
                 script {
-                    myWordpressImage = docker.build("172.29.10.8/my-wordpress:latest")
+                    myWordpressImage = docker.build("https://172.29.10.8/my-wordpress:latest")
                 }
             }
         }
