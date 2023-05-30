@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("clone") {
             steps {
-                git(url:"https://github.com/a-malex/wordpres-ci.git", credentialsId:"ahmad-github")
+                git(url:"https://github.com/a-malex/wordpres-ci.git", credentialsId:"github")
             }
         }
         stage("build") {
